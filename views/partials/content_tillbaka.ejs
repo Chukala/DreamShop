@@ -1,0 +1,22 @@
+
+<%if (products) { %>
+<div class="login-container">
+        <div class="login-form-container">
+            <div class="shop_box_wrapper">
+                <ul class="cart_ul">
+                    <% for(let i = 0; i < products.length ; i++) {%>
+                        <%- include('partials/cartlist', {products:products[i]}) %>
+                    <%} %>    
+                </ul>
+            </div>
+        </div>	
+</div>
+<% } %>
+
+
+
+
+
+
+
+

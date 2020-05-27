@@ -1,0 +1,60 @@
+<div class="contact_container">
+	<div class="clear-fix"></div>	
+	<div class="contact_wrapper">
+    	   <div class="contact_box_wrapper">
+            
+			<div class="contact-form">
+				<div id="charge-error">
+					<h4>Your Total: <%=total%></h4>
+				</div>
+			  
+				<form action="/checkout" method="post" id="mycheckout_form">
+				
+					<div class="fieldset_div">
+						<fieldset class="fieldset">
+							 <label for="card-name">Name on Card</label>
+                             <input type="text" id="card-name"  placeholder="sileshi Chukala" class="form-control" required name="name">
+						</fieldset>
+					</div>
+
+                   <div class="fieldset_div">
+						<fieldset class="fieldset">
+							  <label for="card-number">Credit card number</label>
+		                      <input type="text" id="card-number"   placeholder="1111-2222-3333-4444" class="form-control" required name="card-number">
+						</fieldset>
+					</div>
+
+					<div class="fieldset_div">
+						<fieldset class="fieldset">
+							  <label for="card-expiry-month">Exp Month</label>
+		                      <input type="text" id="card-expiry-month"   placeholder="September" class="form-control" required name="card-expiry-month">
+						</fieldset>
+					</div>
+
+                   <div class="fieldset_div">
+						<fieldset class="fieldset">
+							  <label for="card-expiry-year">Exp Year</label>
+                	          <input type="text" id="card-expiry-year"  placeholder="2018" class="form-control" required name="card-expiry-year">
+						</fieldset>
+					</div>
+
+					 <div class="fieldset_div">
+						<fieldset class="fieldset">
+							 <label for="card-cvc">CVC</label>
+                             <input type="text" id="card-cvc" name="card-cvc" placeholder="352"  class="form-control" required name="card-cvc">
+						</fieldset>
+					</div>
+			
+                    <div class="send_btn">
+					    <button id="content_btn" type="submit">Skicka</button>
+                    </div>
+				</form>
+			</div>	
+	   </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script src="/javascripts/checkout.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

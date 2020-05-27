@@ -1,0 +1,48 @@
+<div class="login-container">
+<div class="clear-fix"></div>	
+<div class="login-form-container">
+    <div class="box-wrapper">
+        <div class="login">    
+            <div class="customer-type"><i class="fa fa-user"></i>  <strong>Logga in</strong></div>
+        </div>					
+        <div id="login-password-form">
+            <form method="post" action="/user/login">
+                    <div class="error_msg">
+                        <%if(messages) { %>
+                            <% for(var i=0; i<messages.length; i++) {%>
+                            <li><%= messages[i] %></li>
+                            <%} %>
+                        <% } %>  
+                    </div>
+                <div class="" id="isLogin">
+                    <div class="login--regular">
+                        <fieldset class="fieldset">
+                            <legend>E-mail</legend>    
+                            <input type="text" required="" placeholder="e-mail / användarnamn" name="email" id="ShopLoginForm_Login" value="" autocorrect="off" autocapitalize="none">
+                        </fieldset>
+                    </div>
+                    <div class="password">
+                        <fieldset class="fieldset">
+                            <legend>Lösenord</legend>
+                            <input required="" type="password" placeholder="********" name="password" id="ShopLoginForm_Password">
+                        </fieldset>
+                    </div>
+                    <div class="login_btn">
+                        
+                       <button type="submit" class="" name="signIn">Logga in</button>
+                    </div>
+                </div>
+            </form>
+       
+        </div> 
+
+        <div class="divider_component">
+            <span>Eller</span>
+        </div>
+           <p>Don't have an account ?</p>
+        <div class="login_btn">
+           <button><a class="register-btn" href="/user/register">Registrera dig här</a></button>
+        </div>		
+    </div>	
+</div>
+</div>

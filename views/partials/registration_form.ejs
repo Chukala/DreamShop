@@ -1,0 +1,94 @@
+<div class="login-container">
+    <div class="clear-fix"></div>	
+    <div class="login-form-container">
+        <div class="box-wrapper">
+            <div class="login_reg">    
+                <h1>Registrering</h1>
+                <span>Fyll i dina uppgifter för att registrera dig som medlem.</span>   
+            </div>
+                    
+            <div id="login-password-form">
+                <form method="post" action="/user/register">                    
+                    <!--div class="pnumber">
+                        <fieldset class="fieldset ">
+                            <legend>Personnummer<span class="required-symbol">*</span>:
+                            </legend>
+                            <input type="text" required="" id="AddressForm_Personnummer" placeholder="ÅÅÅÅMMDD0000" data-errormessage="Du måste fylla i ditt personnummer" name="personnummer" value="">
+                        </fieldset>
+                    </div-->
+                    <div class="error_msg">
+                        <%if(messages) { %>
+                            <% for(var i=0; i<messages.length; i++) {%>
+                            <li><%= messages[i] %></li>
+                            <%} %>
+                        <% } %>  
+                    </div>
+                              
+                    <div class="email">
+                        <fieldset class="fieldset">
+                            <legend>E-postadress<span class="required-symbol">*</span>:</legend>
+                            <input type="email" required="" id="email" placeholder="Din e-postadress" name="email">
+                        </fieldset>
+                    </div>
+                    <!--div class="first_name">
+                        <fieldset class="fieldset ">
+                            <legend>Förnamn<span class="required-symbol">*</span>:
+                            </legend>
+                            <input type="text" required="" id="AddressForm_FirstName" placeholder="Förnamn" data-errormessage="Du måste fylla i ett förnamn" name="firstName" value="">
+                        </fieldset>
+                    </div-->
+                    <!--div class="last_name">
+                        <fieldset class="fieldset ">
+                            <legend>Efternamn<span class="required-symbol">*</span>:
+                            </legend>
+                            <input id="AddressForm_LastName" required="" type="text" placeholder="Efternamn" data-errormessage="Du måste fylla i ett efternamn" name="lastName" value="">		
+                        </fieldset>
+                    </div>
+                    <div class="mobil_number">
+                        <fieldset class="fieldset seamless-fieldset--error">
+                            <legend>Mobilnummer<span class="required-symbol">*</span>: 
+                            </legend>
+                            <span class="postfix">+46</span>
+                            <input type="tel" pattern="[0-9]+" class="input-postfix" required="" id="AddressForm_Phone" placeholder="Mobilnummer" data-errormessage="Du måste fylla i ett mobilnummer" name="phone" value="">	
+                        </fieldset>
+                    </div>
+                    <div class="username_class" id="username_id">
+                        <fieldset class="fieldset ">
+                            <legend>Önskat användarnamn<span class="required-symbol"></span>:
+                            </legend>
+                            <input type="text" required="" id="RegisterUserFullEmail_Login" name="registeruser_email_Login" value="" placeholder="usernamn" data-errormessage="Ditt användarnamn måste innehålla minst sex tecken">	
+                        </fieldset>
+                    </div--> 
+                    
+                    <div class="user_psw" id="password">
+                        <fieldset class="fieldset">
+                            <legend>Önskat lösenord<span class="required-symbol">*</span>:
+                            </legend>
+                            <input type="password" required="" id="password" placeholder="******" name="password">	
+                        </fieldset>
+                    </div>
+                    <!--div id="terms-checkbox" class="terms-conditions">
+                        <fieldset class="fieldset">
+                            <div class="container--heading__title">
+                                <input type="checkbox" name="Login_RememberMe" id="Login_RememberMe" class="" value="true" checked=""> 
+                                <label for="Login_RememberMe" class="login_label"> 
+                                    <span>Jag godkänner DreamShop</span>				
+                                    <a target="_blank" href="" class="villkor_link">medlemsvillkor<span class="required-symbol">*</span></a>
+                                    <span>och</span>
+                                    <a target="_blank" href="" class="villkor_link">integritetspolicy<span class="required-symbol">*</span></a>
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div-->
+                    <div class="login_btn">
+                    
+                        <button>Registrera</button>
+                    </div>
+
+                </form>   
+            </div>
+            
+        </div>	
+    </div>
+</div>

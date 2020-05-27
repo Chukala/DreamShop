@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 100%;
+    height: 70px;
+    background: #00C7CF;
+}
+
+.menu_ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_li {
+    list-style: none;
+    padding: 16px;
+}
+
+.menu_li a {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-decoration: none;
+}

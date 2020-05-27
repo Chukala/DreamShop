@@ -1,0 +1,23 @@
+
+<!--div class="prod_sucess_msg_container">
+	<div id="prod_sucess_msg" class= "success <%if(noMessages)%> hidden">
+	  <%=successMsg%>
+	 </div>
+</div-->
+<div class="product-grid__product-wrapper">
+	<div class="product-grid__product">
+		<div class="product-grid__img-wrapper">			
+			<img src="../images/<%=product.image%>" alt="Img" class="product-grid__img" />
+		</div>
+		<span class="product-grid__title"><%=product.title%></span>
+		<span class="product-grid__price"><%=product.price%>kr</span>
+		<div class="product-grid__extend-wrapper">
+			<div class="product-grid__extend">
+				<p class="product-grid__description"><%=product.desc%></p>
+				<a href="/addToCart/<%=product._id%>"><span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i>Add to cart </span></a>				
+				<span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+			</div>
+		</div>
+	</div>
+</div>
+

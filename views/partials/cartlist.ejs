@@ -1,0 +1,27 @@
+
+<li class= "cart_li">
+       <div class="container_shoping_title">
+            <div class="product_image">
+                <span><img src="/images/<%=products.item.image%>" alt="Img" width="106" height="106" class="product_img" /></span>	
+            </div>
+
+            <div class="product_text">
+                <h4><strong>Title: <%=products.item.title%> <br></strong></h4>
+                <h4><strong>Description: <%=products.item.desc%> <br></strong></h4>          
+            </div>
+            <div class="closing_image">
+                <a href="/remove/<%=products.item._id%>" id="close_icon"><i class="fa fa-2x fa fa-times-circle"></i></a>
+            </div>
+        </div>
+
+        <div class="container_price_div">
+            <div class="total_price">
+                <span class="product-grid__price">Qty: <%=products.qty%></span>
+            </div>
+            <div class="shopping_price">
+                <span class="product-grid__price">Indv.Price: <%=products.item.price%>kr</span>
+            </div>
+        </div>			   
+     
+</li>   
+

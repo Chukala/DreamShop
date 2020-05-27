@@ -1,0 +1,122 @@
+<div class="contact_container">
+	<div class="clear-fix"></div>	
+	<div class="contact_wrapper">
+	   <div class="contact_box_wrapper"> 
+
+			<div class="des_wrapper">
+				<div class="contact">
+					<h1>Kontakta Kundservice&nbsp;</h1>
+				    <p></p>
+				</div>
+				
+				<div class="des_div"> </div>
+
+				<div class="des_div">
+					<span>
+						<strong>
+							<a href="tel:+46-771-499-499" class="villkor_link">0771-499 499</a>
+						</strong>
+				    </span>
+				</div>
+
+				<div class="des_div">
+					<br>Måndag - fredag 09.00-20.00<br>Lördag - söndag 10.00-18.00<br>
+					<strong>
+						<span><br></span>
+					</strong>
+				</div>
+
+				<div class="des_div">
+					<a class="villkor_link" href="">Se vanliga frågor här</a>
+				</div>
+
+				<br><br>
+				 <div class="success_msg">
+                       <p> <%=msg %>  </p>
+	             </div>
+                 <br>
+				<h2 class= des_div>
+					<span >
+						<strong>
+							Skicka din fråga till oss
+						</strong>
+					</span>
+				</h2>
+
+				<p></p>
+			</div>
+
+			<div class="contact-form">
+			   
+				<form name="ContactUsForm" class="contact-form" method="post" action="/user/contact">
+
+					<div class="fieldset_div">
+						<fieldset class="fieldset "> 
+							<legend>Namn<span class="required-symbol">*</span>:</legend> 
+							<input type="text" required="" data-errormessage="Du glömde ange ett namn." placeholder="Namn" name="username">	
+						</fieldset> 
+					</div>
+
+					<div class="fieldset_div">
+						<fieldset class="fieldset ">
+							<legend>E-post<span class="required-symbol">*</span>:</legend>
+							<input type="text" required="" data-errormessage="Du måste fylla i en e-postadress" name="email" placeholder="E-post">	
+						</fieldset>
+					</div>
+
+					<div class="fieldset_div">
+						<fieldset class="fieldset">
+							<legend>Adress:</legend>
+							<input type="text" name="adress" placeholder="Adress">	 
+						</fieldset>
+					</div>
+
+					<div class="fieldset_div">
+						<fieldset class="fieldset">
+							<legend>Postnummer och ort:</legend> 
+							<input type="text" name="postaladdress" placeholder="Postnummer och ort">
+						</fieldset>
+					</div>
+
+					<div class="fieldset_div"> 
+						<fieldset class="fieldset ">
+							<legend>Telefon<span class="required-symbol">*</span>:</legend> 
+							<input type="text" required="" data-errormessage="Du måste fylla i ett mobilnummer" name="telefon" placeholder="Telefon">
+						</fieldset>
+					</div>
+
+					<div class="fieldset_div">
+						<fieldset class="fieldset">
+							<legend>Ordernummer:</legend>
+							<input type="text" name="ordernumber" id="ContactUsForm_Order" placeholder="Ordernummer:">
+						</fieldset>
+					</div>
+
+					<div class="fieldset_div">
+						<fieldset class="fieldset ">
+							<legend>Meddelande<span class="required-symbol">*</span>:</legend> 
+							<textarea id="ContactUsForm_Comments" class="contact-us-textarea" placeholder="Skriv ett meddelande" required="" data-errormessage="Du måste skriva ett meddelande." name="comments">
+							</textarea>
+						</fieldset>
+					</div>
+
+					<div id="terms-checkbox" class="terms-conditions">
+						<div class="container--heading__text-wrapper">
+							   <input type="checkbox" data-errormessage="Du behöver <span class='error-highlight'>bekräfta våra villkor</span> ." required="" value="on" id="terms-conditions-checkbox" name="terms-conditions" class="icon-checkmark icon-checkmark--40px"> 
+								<label for="Login_RememberMe" class="login_label">  
+								<span>Jag godkänner DreamShops</span>
+								<a target="_blank" href="" class="villkor_link">integritetspolicy</a>
+								<span class="required-symbol">*</span>	
+						</div>	
+					</div>
+                    <div class="send_btn">
+					    
+                    	<button type="submit" name="send_btn" class="">Skicka </button>
+                    </div>
+				    
+
+				</form>
+			</div>	
+	   </div>
+   </div>
+</div>

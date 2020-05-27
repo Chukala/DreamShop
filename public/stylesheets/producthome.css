@@ -1,0 +1,64 @@
+.card img {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    /* margin-bottom: 20px;*/
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+
+.container {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 85vw;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

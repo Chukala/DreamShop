@@ -1,0 +1,54 @@
+<div class="login-container">
+    <div class="clear-fix"></div>	
+    <div class="login-form-container">
+        <div class="box-wrapper">
+            <div class="login">    
+            <div class="customer-type"> <strong><%=title%></strong></div>
+            </div>
+            <div id="insert_prd_form">
+                <form method="post" action="products/updateproduct" autocorrect="off" autocapitalize="none">
+                    <div class="create_div">
+                        <fieldset class="fieldset">
+                        <legend>Title:</legend>
+                        <input type="text" required="" placeholder="" name="title">
+                        </fieldset>
+                    </div>
+                    <div class="create_div">
+                        <fieldset class="fieldset">
+                        <legend> Partnumber:</legend>
+                        <input required="" type="text" placeholder="" name="partnumber">
+                        </fieldset>
+                    </div>
+                    <div class="create_div">
+                        <fieldset class="fieldset">
+                        <legend> Image: </legend>
+                        <input required="" type="text" placeholder="" name="image">
+                        </fieldset>
+                    </div>
+                    <div class="create_div">
+                        <fieldset class="fieldset">
+                        <legend> Category: </legend>
+                        <input required="" type="text" placeholder="" name="cat">
+                        </fieldset>
+                    </div>
+                    <div class="create_div">
+                        <fieldset class="fieldset">
+                        <legend> Price: </legend>
+                        <input required="" type="text" placeholder="" name="price">
+                        </fieldset>
+                    </div>
+                    <div class="create_div">
+                        <fieldset class="fieldset">
+                        <legend> Description: </legend>
+                        <input required="" type="text" placeholder="" name="desc">
+                        </fieldset>
+                    </div>
+                    <div class="login_btn">
+                        <button type="submit" class="" name="submit">Submit</button>
+                        <!--input type="submit" value="Submit"-->
+                    </div>
+                </form>
+            </div>      		
+        </div>	
+    </div>
+</div>
